@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram id="gYLYQ7Mg_8yEOV8OBuSv" name="Page-1">
+        <mxGraphModel dx="595" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;" parent="1" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="170" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="200" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="340" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=none;html=1;" parent="1" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="410" y="170" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="" style="edgeStyle=none;html=1;" parent="1" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="200" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;" parent="1" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="340" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=none;html=1;" parent="1" source="18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="410" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="#onClickImage&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#24F01D;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" target="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="480" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="App.tsx is the entry file and user is given a button to click image and function is called" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#24F01D;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="420" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="33" target="34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="inside&amp;nbsp; onClickImage function, image is clicked and send to&amp;nbsp; #RNTextDetector&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#24F01D;" vertex="1" parent="1">
+                    <mxGeometry x="428" y="396" width="130" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="34" target="36">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="RNTextDetector is the name of native module exported from native side and it has a function #detectFromUri which accepts a uri string as a argument to parse data from&lt;br&gt;&amp;nbsp;" style="whiteSpace=wrap;html=1;strokeColor=#24F01D;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="700" width="135" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="36" target="38">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="aftrer parsing the data it is send back to the JS side asynchronously&amp;nbsp;" style="whiteSpace=wrap;html=1;strokeColor=#24F01D;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="740" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="the data recieved is then returned from #useCaptureImage as #parsedData" style="whiteSpace=wrap;html=1;strokeColor=#24F01D;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="740" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

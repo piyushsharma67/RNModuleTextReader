@@ -7,6 +7,8 @@ function App(){
 
   const {onClickImage,data,loading,parsedData}=useCaptureImage()
 
+  console.log("dsdas")
+
   return (
     <View style={style.container}>
       <MyLoader loaderVisible={loading}/>

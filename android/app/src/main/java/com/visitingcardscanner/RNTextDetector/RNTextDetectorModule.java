@@ -51,33 +51,33 @@ public class RNTextDetectorModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-    public void detectFromUri(String imageUri, final Promise promise) {
-        try {
+        public void detectFromUri(String imageUri, final Promise promise) {
+            try {
 
-            uri= Uri.parse(imageUri);
-            System.out.println(imageUri);
-            image = InputImage.fromFilePath(this.reactContext,uri);
+                uri= Uri.parse(imageUri);
+                System.out.println(imageUri);
+                image = InputImage.fromFilePath(this.reactContext,uri);
 
-            Task<Text> result1=recognizer.process(image)
-                    .addOnSuccessListener(new OnSuccessListener<Text>() {
-                        @Override
-                        public void onSuccess(Text text) {
-                            promise.resolve(getDataAsArray(text));
+                Task<Text> result1=recognizer.process(image)
+                        .addOnSuccessListener(new OnSuccessListener<Text>() {
+                            @Override
+                            public void onSuccess(Text text) {
+                                promise.resolve(getDataAsArray(text));
+                            }
                         }
-                    }
-                    ).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            e.printStackTrace();
-                            promise.reject(e);
+                        ).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                e.printStackTrace();
+                                promise.reject(e);
+                            }
                         }
-                    }
-            );
-        } catch (IOException e) {
-            promise.reject(e);
-            e.printStackTrace();
+                );
+            } catch (IOException e) {
+                promise.reject(e);
+                e.printStackTrace();
+            }
         }
-    }
 
     /**
      * Converts parsedText into a map
